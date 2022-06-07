@@ -33,5 +33,7 @@ function inputPokemon (showpokemon, name, id, type) {
     `
 }
 
+//Trovare un modo per utilizzare il metodo sort()
+
 
 
