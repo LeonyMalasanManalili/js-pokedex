@@ -1,0 +1,120 @@
+/* GENERAL */
+*{ 
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+    font-family: sans-serif
+}
+
+body{
+    background: rgb(212,211,221);
+    background: linear-gradient(90deg, rgba(212,211,221,1) 26%, rgba(239,239,187,1) 100%);
+}
+
+/* Utilities BACKGROUND SCHEDA A SECONDA TIPO POKEMON*/
+
+.schedaPokemon.grass{background: #DEFDE0;}
+
+.schedaPokemon.fire{background: #FDDFDF;}
+
+.schedaPokemon.electric{background: #FCF7DE;}
+
+.schedaPokemon.water{background: #DEF3FD;}
+
+.schedaPokemon.ground{background: #f4e7da;}
+
+.schedaPokemon.rock{background: #d5d5d4;}
+
+.schedaPokemon.fairy{background: #fceaff;}
+
+.schedaPokemon.poison {background: #98d7a5;}
+
+.schedaPokemon.bug {background: #f8d5a3;}
+
+.schedaPokemon.dragon {background: #97b3e6;}
+
+.schedaPokemon.psychic {background: #eaeda1;}
+
+.schedaPokemon.flying {background: #F5F5F5;}
+
+.schedaPokemon.fighting{background: #E6E0D4;}
+
+.schedaPokemon.normal{background: #F5F5F5;}
+
+.schedaPokemon.ghost{background: #705898;}
+
+.schedaPokemon.ice{background: #98d8d8;}
+
+/* HEADER MAIN */
+
+header{
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* POKEDEX STRUTTURA */
+
+.contenitorePokemon{
+    display: flex;
+    gap: 1.2em;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    width: 70%;
+    justify-content: center;
+}
+
+/* STRUTTURA BASE SCHEDE POKEMON DENTRO POKEDEX */
+
+.schedaPokemon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 160px;
+    background: greenyellow;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* LE IMG POKEMON */
+
+.showPokemon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+
+/* IDENTIFICATIVO POKEMON */
+
+.whichPokemon{
+    padding: 4px 6px;
+    background: rgba(0, 0, 0, 0.2);
+    line-height: 50px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* DATI NELLA SCHEDA */
+
+.pokeInformations{
+    text-align: center;
+    line-height: 26px;
+}
+
+.pokeInformations p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.pokeInformations p:nth-child(3) {
+    font-size: 12px;
+    font-weight: 400;
+}
